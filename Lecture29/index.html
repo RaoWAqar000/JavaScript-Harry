@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Card</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .Card {
+        height: 400px;
+        width: 25vw;
+        background-color: rgb(231, 225, 225);
+        margin-top: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        /* margin: 60px; */
+      }
+
+      .insidecard {
+        height: 375px;
+        width: 20vw;
+        background-color: white;
+        border: 1px solid rgb(148, 144, 144);
+        border-radius: 15px;
+      }
+
+      img {
+        height: 150px;
+        /* width: 150px; */
+        margin-top: 5px;
+        margin-left: 5px;
+        border-radius: 10px;
+      }
+
+      .button {
+        margin-left: 20px;
+      }
+
+      .btn {
+        border: none;
+        margin-left: 15px;
+        color: rgb(114, 105, 105);
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+
+      .Heading {
+        margin-top: 10px;
+        margin-left: 20px;
+        color: rgb(68, 52, 52);
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        font-weight: 1000;
+      }
+
+      .para {
+        margin-left: 20px;
+        margin-top: 10px;
+        color: rgb(114, 105, 105);
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        font-size: 0.95rem;
+      }
+
+      .button2 {
+        margin-top: 20px;
+        text-align: center;
+       
+      }
+
+      .button2 a{
+        padding: 9px 10px;
+        background-color: rgb(144, 144, 180);
+        border-radius: 100px;
+        text-decoration: none;
+        color: blue;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="Card">
+      <div class="insidecard">
+        <img src="card2.jpg" alt="" height="" />
+        <div class="button">
+          <!-- <a href="">Nature</a>
+            <a href="">Lake</a> -->
+
+          <button class="btn">Nature</button>
+          <button class="btn">Lake</button>
+        </div>
+        <h2 class="Heading">Kuch Bhi</h2>
+        <div class="para">
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+            tenetur ratione ullam minus, aspernatur sunt sapiente deleniti
+            impedit voluptates suscipit!
+          </p>
+        </div>
+
+        <div class="button2">
+            <a href="">Read more</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

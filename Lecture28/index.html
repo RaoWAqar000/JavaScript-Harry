@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+
+        .box{
+            height: 433px;
+            width: 80vw;
+            padding: 3px;
+            margin: 3px;
+            border: 2px solid black;
+        }
+
+        .box1{
+            background-color: aqua;
+            /* position: sticky;
+            top: 0px;
+            height: 100px;
+            width: 100%;
+            margin: 0;
+            padding: 0; */
+
+
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            /* absolute position mai jb hm ny top 0px diya to box top k sath lg jai ga or
+            jis trha hm brhaaty jai gy ye top sy door hota rhy ga or html tag jo sb sy oopr
+            laga hua hai us k relative move krta rhy ga
+            agr hm parent class ki position absolute kr dy to box 1 parent k relative move kry ga */
+
+
+            /* position: relative; */
+            /* z-index: 1; */
+            /* Agr ksi ek box ko ksi dosry box k ooper lana hai to hm z-index property use krty hai 
+            z-index bs zero ni hona chaye agr hm ksi ek box ko ksi doosry box k ooper lana chaty hai*/
+        }
+        .box2{
+            background-color: brown;
+            /* position: relative;
+            top: -48px;
+            left: 10px; */
+        }
+        .box3{
+            background-color: cadetblue;
+
+            /* Fixed position sy box screen pai fix ho jata hai Phr hm jitna
+            bhi screen ko scroll kr ly box fix hi rehta hai  */
+
+            /* position: fixed;
+            bottom: 20px;
+            left: 30px; */
+
+        }
+        .box4{
+            background-color: purple;
+        }
+
+        .parent{
+            padding: 43px;
+            margin: 34px;
+            border: 3px solid purple;
+            /* position: absolute; */
+
+            /* Exception: transform, filters and perspective properties can also make
+            an element appears as positioned */
+
+            /* transform: translate(0); */
+            /* filter: invert(0); */
+            /* perspective: 0em; */
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>        
+        <div class="box box4"></div>
+    </div>
+</body>
+</html>

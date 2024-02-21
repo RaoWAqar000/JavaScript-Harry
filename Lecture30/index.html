@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS variables</title>
+    <style>
+
+        :root{
+            /* root mai jo bhi variable hota hai wo globel variable hota hai */
+            --color: rgb(0, 255, 221);
+            --seccolor: rgb(46, 46, 95);
+            --defaultpaddind: 40px;
+            --defopacity:0.7;
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        ul{
+            display: flex;
+        }
+
+        ul li{
+            opacity: var(--defopacity);
+            list-style: none;
+            /* padding: 34px; */
+            padding: var(--defaultpaddind);
+
+        }
+
+        ul li:first-child{
+            --color: rgb(81, 255, 0);
+            /* ab green color sirf first child pai use hoga */
+            background-color: var(--color, blue);
+            /* agr koi --color name ka var ni hai to blue color dy do */
+        }
+
+        .nav{
+            background-color: var(--color);
+            border:  2px solid var(--seccolor);
+        }
+
+        .container{
+            background-color: var(--seccolor) ;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, temporibus est. Voluptate delectus architecto nulla illum labore impedit quasi, non sit voluptatibus ipsum ad nostrum exercitationem in, eius expedita molestiae inventore nobis dicta, iusto distinctio veniam quos? Hic provident alias maiores quam, dignissimos omnis eligendi!
+    </div>
+</body>
+</html>

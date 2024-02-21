@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Baloo+Bhaijaan+2:wght@600&family=Poppins:ital,wght@0,500;1,100&display=swap');
+
+      :root{
+        --color: rgb(102, 102, 196);
+        --secondcolor: red;
+        --thirdcolor:rgb(107, 94, 94);
+        --fourthcolor:rgb(209, 207, 91);
+        --defaultpadding:40px;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        /* width: 100vw;
+        height: 100vh; */
+        background-color: rgb(107, 94, 94);
+      }
+      .nav {
+        /* height: 100px;
+        width: 100vw; */
+        background-color: rgb(86, 196, 132);
+      }
+
+      ul {
+        display: flex;
+      }
+
+      ul li {
+        
+        list-style-type: none;
+        padding: var(--defaultpadding);
+        
+        font-family: 'Poppins', sans-serif; 
+        font-weight: bolder;
+        font-size: 22px;
+        color: rgb(48, 45, 45);
+        margin: 10px;
+        
+      }
+
+      .home{
+        background-color: var(--color);
+        border-radius: 100px;
+      }
+      .contact{
+        border-radius: 100px;
+        background-color: var(--secondcolor);
+      }
+
+      .about{
+        background-color: burlywood;
+        border-radius: 100px;
+      }
+
+      .home:hover {
+        background-color: var(--fourthcolor);
+        cursor: pointer;
+        border-radius: 100px;
+      }
+
+      .contact:hover{
+        --fourthcolor:green;
+        cursor: pointer;
+        border-radius: 100px;
+        background-color: var(--fourthcolor);
+      }
+
+      .about:hover{
+        background-color: chocolate;
+        cursor: pointer;
+      }
+
+      .content{
+        background-color: rgb(160, 121, 158);
+        color: rgb(0, 0, 0);
+        /* height: 800px; */
+        width: 400px;
+        font-size: 25px;
+        border: 5px solid white;
+        border-radius: 20px;
+        margin: 20px;
+        padding: 20px;
+        margin-left: 550px;
+      }
+
+      .content:hover{
+        background-color: black;
+        color: white;
+      }
+      h1{
+        text-align: center;
+        background-color: rgb(61, 187, 82);
+        border-radius: 100px;
+          
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="nav">
+      <ul>
+        <li class="home">Home</li>
+        <li class="contact">Contact</li>
+        <li class="about">About</li>
+      </ul>
+    </div>
+
+    <div class="content">
+      <h1 >Hello</h1>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate ex voluptates quis ea rerum rem hic, voluptas voluptatem, aut est minus perferendis? Unde architecto, ullam maxime possimus amet quisquam impedit exercitationem, ipsa, quam rerum quae voluptatem odit necessitatibus nam harum pariatur totam nisi ipsam libero vel esse nesciunt. Nihil, est eos ad debitis voluptates repudiandae. Minus illum voluptatibus quis quo, omnis sunt maiores eveniet error, minima eos tenetur fugit, ducimus officiis ea molestias! Facere aliquid distinctio ipsam placeat suscipit iusto. Vitae molestiae facilis assumenda perferendis, aperiam animi magni! Saepe at quidem, pariatur dolores placeat explicabo aspernatur minus expedita sit doloremque?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione perferendis cumque illum, facilis explicabo non dolores natus omnis expedita minima quis. Modi, perferendis quas blanditiis nihil, fuga, illum eligendi debitis culpa rerum iusto dignissimos cumque qui ipsa architecto deserunt! Mollitia harum a ab sapiente sequi officia fugit qui molestiae? Vitae?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt mollitia omnis nam soluta odio explicabo saepe laborum, voluptatum facilis at excepturi nulla quod officia veniam quibusdam eligendi vero quaerat sit. Eius libero dolorum ratione ipsa deleniti asperiores, cumque laboriosam suscipit optio aliquid sequi, ipsam eaque dolor accusamus mollitia! Quia nisi impedit dicta corporis numquam modi, ipsam maiores quam! Alias, est.
+    </div>
+  </body>
+</html>
